@@ -45,5 +45,12 @@
     "fast-glob": "^3.2.11",
     "mongodb": "^4.8.0",
     "validator": "^13.7.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint 'src/**' --fix",
+      "npm run test:staged",
+      "git add"
+    ]
   }
 }
